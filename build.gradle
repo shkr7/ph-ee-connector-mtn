@@ -20,14 +20,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation('org.springframework.boot:spring-boot-starter-web:2.6.2')
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 group = 'org.mifos'
 version = '1.0.0-SNAPSHOT'
-sourceCompatibility = '11'
-
-tasks.named('test') {
-	useJUnitPlatform()
-}
+sourceCompatibility = JavaVersion.VERSION_17
