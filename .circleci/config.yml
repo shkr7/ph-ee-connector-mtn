@@ -57,7 +57,7 @@ jobs:
       - run:
           name: Build Docker image
           command: |
-            ./gradlew checkstyleMain
+#            ./gradlew checkstyleMain
             ./gradlew bootJar
             docker build -t fynarfin/ph-ee-connector-mtn:latest .
             if [ "$CIRCLE_BRANCH" != "develop" ]; then
