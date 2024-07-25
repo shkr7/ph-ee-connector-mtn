@@ -99,3 +99,4 @@ workflows:
       - build_and_push_latest_image:
           context:
             - DOCKER
+
